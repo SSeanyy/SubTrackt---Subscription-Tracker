@@ -1,0 +1,169 @@
+body {
+    background-color: #F9F7E8;
+}
+
+.airplaneGIF {
+    display: flex;
+    width: 110px;
+    height: 90px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.readingGIF {
+    display: flex;
+    width: 210px;
+    height: 140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topSection {
+    text-align: center;
+    font-family: 'Gabarito', sans-serif;
+}
+
+.aboutText {
+    text-align: left;
+    margin: 0 auto;
+    font-family: 'Gabarito', sans-serif;
+    max-width: 800px;
+}
+
+.bottomSection {
+    text-align: center;
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 900;
+}
+
+.bottomText {
+    margin-top: 8%;
+}
+
+.col {
+    font-size: 90px;
+}
+
+.logoText {
+    background-color:#FFEB3B;
+    font-weight: 900;       
+    font-size: 110px;        
+    display: inline-block;  
+    padding: 20px;     
+    border-radius: 20px;  
+}
+
+.signOut {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.signOut h1 {
+    font-weight: 900;       
+    font-size: 70px;        
+    font-family: 'Gabarito', sans-serif;
+}
+
+.signOut h3 {
+    font-weight: 500;               
+    font-family: 'Gabarito', sans-serif;
+}
+
+.navbar-brand, .nav-item{
+    color:#FFEB3B;
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 700;
+    font-size:20px;        
+}
+
+.btn-warning {
+    display: block;
+    margin: 50px auto;
+    background-color:#FFEB3B; 
+    border: none;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Gabarito', sans-serif;
+}
+
+.buttons{   
+  display: flex;
+  justify-content: center;
+  gap: 10px;               
+  margin: 50px auto;
+  font-family: 'Gabarito', sans-serif;
+}
+
+.hero {
+    display: flex;               
+    align-items: center;          
+    gap: 40px;                    
+    width: 100%;
+    background-color: #85805860;
+    font-family: 'Gabarito', sans-serif;
+    padding: 1%;
+    margin-top: 5%;
+}
+
+/*The code below was modified by ChatGPT to help organize content into columns. Thank you ChatGPT!
+Author: ChatGPT
+URL: https://chatgpt.com/ */
+.dashboardHero {
+    padding: 40px;
+    display: flex; 
+    flex-direction: column;                                     
+    width: 55%;
+    background-color: #85805860;
+    margin: 3% auto;
+}
+
+.dashboardText {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Gabarito', sans-serif;
+    text-align: left;
+}
+
+.heroImg {
+    width: 30%;                               
+    margin-left: 15%;
+}
+
+.heroText {
+    text-align: left;             
+}
+
+/*The code below was retrieved from Stack Overflow to remove underlines from <a> tags. Thank you mit! 
+Author: mit
+Date: May 7th, 2010
+URL: https://stackoverflow.com/questions/2789703/remove-blue-underline-from-link */
+a {
+    text-decoration: none; 
+}
+
+.accordion {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 900px;
+    font-family: 'Gabarito', sans-serif;
+}
+
+.mb-3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 900px;
+    font-weight: 800;
+    font-family: 'Gabarito', sans-serif;
+}
+
+.form-select {
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+}

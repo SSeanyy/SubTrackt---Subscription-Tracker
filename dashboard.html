@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SubTrackt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+    </style>
+    <!--Alerts the user whenever they interact with the sign out, save reminder, payments, and edit button-->
+    <script>
+      const my_clicked_alert = () => {
+        alert("You have been signed out!")
+      }
+      const my_save_alert = () => {
+        alert("Your reminder has been set!")
+      }
+      const my_payment_alert = () => {
+        alert("This will allow the user to use their payment method!")
+      }
+      const my_edit_alert = () => {
+        alert("This brings the user to the original website to edit or cancel the subscription plan")
+      }
+    </script>
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><i class="bi bi-journal-minus"></i> SUBTRACKT</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="questions.html">FAQs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            My Account
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="account.html">Edit Information</a></li>
+            <li><a class="dropdown-item" href="signout.html" onclick="my_clicked_alert()">Sign Out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> 
+    <div class="topSection">
+      <br>
+      <h1>My Dashboard <i class="bi bi-clipboard2-check-fill"></i></h1>
+    </div>
+    
+    <!--The code below was modified by ChatGPT to help organize content into columns. Thank you ChatGPT!
+        Author: ChatGPT
+        URL: https://chatgpt.com/-->
+    <div class="dashboardHero">
+      <div class="dashboardText">
+        <h2>My current subscriptions <span class="badge text-bg-danger">2 payments due soon!</span></h2>
+      </div>
+      <br>
+    <!--The code below was inspired by the Lab 4 - Style Guide Lab-->
+    <div class="dashboardText">
+        <div class="colour one"></div>
+        <h4>Netflix ($12.99/mo.) | Next renewal date: 01/08/2026</h4>
+    </div>
+    <br>
+    <br>
+    <div class="dashboardText">
+        <div class="colour two"></div>
+        <h4>Spotify ($9.99/mo.) | Next renewal date: 12/20/2025 <span class="badge text-bg-danger">!</span></h4>
+    </div>
+    <br>
+    <br>
+    <div class="dashboardText">
+        <div class="colour three"></div>
+        <h4>Quizlet ($2.99/mo.) | Next renewal date: 01/14/2026</h4>
+    </div>
+    <br>
+    <br>
+    <div class="dashboardText">
+        <div class="colour four"></div>
+        <h4>Sportsnet+ ($14.99/mo.) | Next renewal date: 12/18/2026 <span class="badge text-bg-danger">!</span></h4>
+    </div>
+    <br>
+    <br>
+    <div class="dashboardText">
+        <div class="colour five"></div>
+        <h4>Amazon Prime Video ($13.99/mo.) | Next renewal date: 01/03/2026</h4>
+    </div>
+`   <br>
+    <br>
+    <div class="dashboardText">
+        <div class="colour six"></div>
+        <h4>PlayStation PLUS ($24.99/mo.) | Next renewal date: 01/09/2026</h4 >
+    </div>
+  </div>
+
+  <div class="topSection">
+      <h1>Personalized Reminders</h1>
+      <br>
+      <h5>Choose how many days before renewal you want to be reminded</h5>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Select your reminder</option>
+        <option value="1">1 day</option>
+        <option value="2">2 days</option>
+        <option value="3">3 days</option>
+        <option value="4">4 days</option>
+        <option value="5">5 days</option>
+        <option value="6">6 days</option>
+        <option value="7">1 week</option>
+        <option value="8">1 month</option>
+    </select>
+    <button type="button" class="btn btn-warning" onclick="my_save_alert()">
+        Set reminder <i class="bi bi-save"></i>
+    </button>
+      <h1>Make a payment/Edit current subscriptions</h1>
+      <br>
+      <h5>Choose to make a payment or edit your subscription plan</h5>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Select a subscription</option>
+        <option value="1">Netflix</option>
+        <option value="2">Spotify</option>
+        <option value="3">Quizlet</option>
+        <option value="4">Sportsnet+</option>
+        <option value="5">Amazon Prime Video</option>
+        <option value="6">PlayStation PLUS</option>
+      </select>
+    </div>
+  </div>
+  <div class="buttons">
+  <button type="button" class="btn btn-dark" onclick="my_payment_alert()">Make a payment <i class="bi bi-credit-card"></i></button>
+  <button type="button" class="btn btn-dark" onclick="my_edit_alert()">Edit subscription plan <i class="bi bi-pencil-square"></i></button>
+</div>
+    <!--The code below was inspired by the Lab 4 - Style Guide Lab-->
+    <style>
+    .one {
+      margin-left: 5%;
+      border-radius: 50%;
+      width: 55px;
+      height: 50px;
+      background-color: #D05353;
+    }
+
+    .two {
+      margin-left: 5%;
+      border-radius: 50%;
+      width: 55px;
+      height: 50px;
+      background-color: #81C231;
+    }
+
+    .three {
+      margin-left: 5%;
+      border-radius: 50%;
+      width: 55px;
+      height: 50px;
+      background-color: #BB70CA;
+    }
+
+    .four {
+      margin-left: 5%;
+      border-radius: 50%;
+      width: 55px;
+      height: 50px;
+      background-color: #5394D0;
+    }
+
+    .five {
+      margin-left: 5%;
+      border-radius: 50%;
+      width: 55px;
+      height: 50px;
+      background-color: #53D0AD;
+    }
+
+    .six {
+      margin-left: 5%;
+      border-radius: 50%;
+      width: 55px;
+      height: 50px;
+      background-color: #EA9432;
+    }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

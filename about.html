@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SubTrackt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+    </style>
+    <!--Alerts the user whenever they interact with the sign out button-->
+    <script>
+      const my_clicked_alert = () => {
+        alert("You have been signed out!")
+      }
+    </script>
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><i class="bi bi-journal-minus"></i> SUBTRACKT</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="questions.html">FAQs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dashboard.html">Dashboard <span class="badge text-bg-danger">2</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            My Account
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="account.html">Edit Information</a></li>
+            <li><a class="dropdown-item" href="signout.html" onclick="my_clicked_alert()">Sign Out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>  
+    <br>
+    <div class="topSection">
+      <h1>About <span class="logoText" style="font-size: 35px;"><i class="bi bi-journal-minus"></i> SubTrackt</span></h1>
+    </div>
+    <div class="dashboardHero">
+      <div class="aboutText">   
+      <br>                         
+      <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SubTrackt is an online platform designed to help users easily manage and view all of their current subscriptions in one place. Whether they’re for school-related applications, productivity tools, music services, streaming platforms, or various other subscriptions we sign up for throughout the year, it’s easy to lose track of all your subscriptions. As a matter of fact, Tindall states that <strong>“A 2022 study by brand insights agency C+R research found 42% of consumers have forgotten they were still paying for a service they no longer use”</strong> (2024).
+      <br>
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Let’s be honest, almost everyone has forgotten to cancel a subscription a time or two, especially with all these <strong>“Free for (X) months, then pay (Y) after!”</strong> deals. These offers seem to be attractive and convenient at first, but when the charges start appearing unexpectedly, they quickly become frustrating. With SubTrackt’s easy-to-navigate, user-friendly, and engaging platform, it provides an ease-of-mind experience when dealing with your subscriptions by allowing users to directly manage every subscription directly within their personalized dashboard, giving them an overview of where their money is going. In addition, SubTrackt avoids these surprises through personalized reminders where users can choose to be notified a day, a week, or even a month before the renewal date to ensure that the user still wishes to continue with their subscription. These alerts help prevent surprise charges and keep you in control. With SubTrackt, managing subscriptions becomes simple, organized, and stress-free.
+      <br>
+      <br>
+      <br>
+      <strong>Sources:</strong>
+      <br>
+      <br>
+      "How to orangize content in hero into columns" prompt. ChatGPT, GPT-5 mini, OpenAI, 5 Dec. 2025,
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://chatgpt.com/" target="_blank">https://chatgpt.com/</a>
+      <br>
+      <br>
+      mit. “Remove Blue Underline From Link.” Stack Overflow, 7 May 2010,
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://stackoverflow.com/questions/2789703/remove-blue-underline-from-link" target="_blank">https://stackoverflow.com/questions/2789703/remove-blue-underline-from-link</a>
+      <br>
+      <br>
+      NerdWallet. “Subscriptions Are Hard to Cancel and Easy to Forget — by Design.” Nasdaq, 
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.nasdaq.com/articles/subscriptions-are-hard-to-cancel-and-easy-to-forget-by-design" target="_blank">https://www.nasdaq.com/articles/subscriptions-are-hard-to-cancel-and-easy-to-forget-by-design </a>
+      <br>
+      <br>
+      <strong>Figma Prototype Link:</strong> 
+      <br>
+      <br>
+      <a href="https://www.figma.com/proto/q80f4PC9fOgaPtRNLKz1ZT/IASC-2P03-Assignment-3---UI-Design-Project?node-id=0-1&t=cjlnYhQAwnpwC2c0-1" target="_blank">https://www.figma.com/proto/q80f4PC9fOgaPtRNLKz1ZT/IASC-2P03-Assignment-3---UI-Design-Project?node-id=0-1&t=cjlnYhQAwnpwC2c0-1</a>
+    </h4>
+    </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

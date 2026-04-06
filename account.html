@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SubTrackt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+    </style>
+    <!--Alerts the user whenever they interact with the sign out, saves changes, or edit payment method button-->
+    <script>
+      const my_clicked_alert = () => {
+        alert("You have been signed out!")
+      }
+      const my_save_alert = () => {
+        alert("Your changes have been saved!")
+      }
+      const my_payment_alert = () => {
+        alert("This will allow the user to edit or add a new payment method!")
+      }
+    </script>
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><i class="bi bi-journal-minus"></i> SUBTRACKT</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="questions.html">FAQs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dashboard.html">Dashboard <span class="badge text-bg-danger">2</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" href="account.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            My Account
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="signout.html" onclick="my_clicked_alert()">Sign Out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <div class="topSection">
+      <br>
+      <!--Top header-->
+      <h1>My Account <i class="bi bi-person-arms-up"></i></h1>
+    </div>
+    <div class="dashboardHero">
+      <h2 class="dashboardText">
+        Personal Information
+      </h2>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">First Name*</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Last Name*</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Doe">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email Address*</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="doejohn@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Password*</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="***********">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Phone Number (optional)</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="(123-456-7890)">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Select your language*</label>
+        <select class="form-select" aria-label="Default select example">
+        <option selected>Select language</option>
+        <option value="1">English</option>
+        <option value="2">French</option>
+        <option value="3">Spanish</option>
+        <option value="4">German</option>
+        <option value="5">Italian</option>
+      </select>
+      </div>
+      <button type="button" class="btn btn-warning" onclick="my_save_alert()">
+        Save changes <i class="bi bi-save"></i>
+    </button>
+    </div>
+    <div class="topSection">
+      <h1>Payment Method <i class="bi bi-credit-card"></i></h1>
+      <br>
+      <h5>Choose to edit or add a payment method</h5>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Debit Card | VISA **** - **** - 7890</option>
+        <option value="1">Add new payment method</option>
+    </select>
+    <button type="button" class="btn btn-warning" onclick="my_payment_alert()">
+        Edit payment method <i class="bi bi-pencil-square"></i>
+    </button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
