@@ -1,2 +1,2 @@
-# SubTrackt---Subscription-Tracker
+# SubTrackt---Online Subscription-Tracker
 Coding/Design academic project
